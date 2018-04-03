@@ -16,3 +16,19 @@ After removing the bugs the application will look like this :
 
 
 <img src = "https://i.imgur.com/DfIu4Aq.png" width=350>
+
+
+
+## After finding bugs and Materializing it, my apps look like this::-
+
+
+
+![screenshot_2018-04-03-11-51-38](https://user-images.githubusercontent.com/25812257/38232762-dcbbd158-3735-11e8-8be2-e2dec14dd1c3.png)
+
+
+![screenshot_2018-04-03-11-51-45](https://user-images.githubusercontent.com/25812257/38232763-dd01f84a-3735-11e8-83f3-70990afe7f20.png)
+
+
+
+![screenshot_2018-04-03-11-51-54](https://user-images.githubusercontent.com/25812257/38232764-dd4378ec-3735-11e8-933b-b0c668d1dbe0.png)
+
