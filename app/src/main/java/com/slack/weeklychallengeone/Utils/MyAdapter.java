@@ -15,10 +15,12 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private ArrayList<Model> mArrayList;
+    private   ArrayList<String> mDescriptiveList;
 
 
-    public MyAdapter(ArrayList<Model> mArrayList) {
+    public MyAdapter(ArrayList<Model> mArrayList, ArrayList<String> mDescriptiveList) {
         this.mArrayList = mArrayList;
+        this.mDescriptiveList=mDescriptiveList;
     }
 
     @NonNull
@@ -31,6 +33,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.tv_name.setText(mArrayList.get(position).getName());
+        holder.description_view.setText(mDescriptiveList.get(position));
     }
 
     @Override
@@ -41,10 +44,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     class MyViewHolder extends RecyclerView.ViewHolder{
         private TextView tv_name;
+        private TextView description_view;
         MyViewHolder(View view) {
             super(view);
 
             tv_name = view.findViewById(R.id.tv_name_row);
+            description_view=view.findViewById(R.id.description_row);
 
         }
     }

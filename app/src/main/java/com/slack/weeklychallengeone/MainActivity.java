@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<Model> mArrayList;
+    ArrayList<String> mDescriptiveList;
     private MyAdapter mAdapter;
     private RecyclerView mRecyclerView;
 
@@ -47,8 +48,21 @@ public class MainActivity extends AppCompatActivity {
         mArrayList.add(new Model("Scroll Views"));
         mArrayList.add(new Model("Grid View"));
 
+        mDescriptiveList = new ArrayList<>();
 
-        mAdapter = new MyAdapter(mArrayList);
+        mDescriptiveList.add(getApplication().getString(R.string.constraint_layout));
+        mDescriptiveList.add(getApplication().getString(R.string.linear_layout));
+
+        mDescriptiveList.add(getApplication().getString(R.string.relative_layout));
+
+        mDescriptiveList.add(getApplication().getString(R.string.card_view));
+
+        mDescriptiveList.add(getApplication().getString(R.string.scroll_view));
+
+        mDescriptiveList.add(getApplication().getString(R.string.grid_view));
+
+
+        mAdapter = new MyAdapter(mArrayList, mDescriptiveList);
         mRecyclerView.setAdapter(mAdapter);
 
     }
